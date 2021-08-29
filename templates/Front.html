@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Prediction</title>
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="menu.js"></script>
+</head>
+
+<body>
+  <div class="mdc-card mdc-elevation--z12 content-card">
+    <div class="mdc-card__content">
+      <div class="mdc-typography--headline4 card-heading">
+        TV Price Prediction
+      </div>
+      <div class="card-options">
+        <center>
+          <div id="card-options">
+          </div>
+        </center>
+      </div>
+      <div class="card-submit">
+        <button class="mdc-button mdc-button--outlined submit-button">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label submit-label">Get Price</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    menuGenFuncs = { 'select': getSelectMenu }
+    console.log(menuGenFuncs)
+
+    $.getJSON('./menu.json', (menus) => {
+      console.log(menus)
+      for (let menu of menus) {
+        $('#card-options').append(menuGenFuncs[menu.type](menu.label, menu.options))
+      }
+
+      const selects = document.getElementsByClassName('mdc-select');
+      for (let select of selects) new mdc.select.MDCSelect(select);
+    })
+
+    const buttons = document.getElementsByClassName('mdc-button');
+    for (let button of buttons) mdc.ripple.MDCRipple.attachTo(button);
+  </script>
+</body>
+
+</html>

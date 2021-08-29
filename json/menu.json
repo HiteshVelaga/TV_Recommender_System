@@ -1,0 +1,44 @@
+[
+    {
+        "type": "select",
+        "label": "Brand",
+        "id": "brand",
+        "options": []
+    },
+    {
+        "type": "select",
+        "label": "Size",
+        "id": "size",
+        "options": []
+    },
+    {
+        "type": "select",
+        "label": "Screen Quality",
+        "id": "hd",
+        "options": []
+    },
+    {
+        "type": "select",
+        "label": "Rating",
+        "id": "rating",
+        "options": []
+    },
+    {
+        "type": "select",
+        "label": "HDMI Ports",
+        "id": "hdmi",
+        "options": []
+    },
+    {
+        "type": "select",
+        "label": "USB",
+        "id": "usb",
+        "options": []
+    },
+    {
+        "type": "select",
+        "label": "Speaker quality",
+        "id": "speaker",
+        "options": []
+    }
+]

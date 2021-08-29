@@ -1,0 +1,191 @@
+[
+    {
+        "type": "select",
+        "label": "TV",
+        "options": [
+            "Samsung",
+            "LG",
+            "Vu",
+            "iFFALCON",
+            "Thomson",
+            "Thomson",
+            "Kodak",
+            "Sansui",
+            "Sony",
+            "BPL",
+            "Philips",
+            "Blaupunkt",
+            "MarQ",
+            "Coocaa",
+            "ADSUN",
+            "TCL",
+            "Detel",
+            "Nokia",
+            "Panasonic",
+            "Micromax",
+            "CloudWalker",
+            "Noble",
+            "IGO",
+            "Impex",
+            "Haier",
+            "JVC",
+            "Skyworth",
+            "AKAI",
+            "Avoir",
+            "Adsun",
+            "Onida",
+            "Koryo"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Size",
+        "options": [
+            {
+                "key": "22",
+                "value": "22 inch"
+            },
+            {
+                "key": "24",
+                "value": "24 inch"
+            },
+            {
+                "key": "31.5",
+                "value": "31.5 inch"
+            },
+            {
+                "key": "32",
+                "value": "32 inch"
+            },
+            {
+                "key": "39",
+                "value": "39 inch"
+            },
+            {
+                "key": "40",
+                "value": "40 inch"
+            },
+            {
+                "key": "43",
+                "value": "43 inch"
+            },
+            {
+                "key": "48",
+                "value": "48 inch"
+            },
+            {
+                "key": "49",
+                "value": "49 inch"
+            },
+            {
+                "key": "50",
+                "value": "50 inch"
+            },
+            {
+                "key": "55",
+                "value": "55 inch"
+            },
+            {
+                "key": "65",
+                "value": "65 inch"
+            },
+            {
+                "key": "75",
+                "value": "75 inch"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "label": "HD",
+        "options": [
+            "HD",
+            "Full HD",
+            "Ultra HD 4K"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Rating",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "HDMI Ports",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "USB",
+        "options": [
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Speaker quality",
+        "options": [
+            {
+                "key": "6",
+                "value": "6W"
+            },
+            {
+                "key": "10",
+                "value": "10W"
+            },
+            {
+                "key": "14",
+                "value": "14W"
+            },
+            {
+                "key": "16",
+                "value": "16W"
+            },
+            {
+                "key": "20",
+                "value": "20W"
+            },
+            {
+                "key": "24",
+                "value": "24W"
+            },
+            {
+                "key": "30",
+                "value": "30W"
+            },
+            {
+                "key": "35",
+                "value": "35W"
+            },
+            {
+                "key": "40",
+                "value": "40W"
+            },
+            {
+                "key": "45",
+                "value": "45W"
+            },
+            {
+                "key": "50",
+                "value": "50W"
+            },
+            {
+                "key": "60",
+                "value": "60W"
+            }
+        ]
+    }
+]

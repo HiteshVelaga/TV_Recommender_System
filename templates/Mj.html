@@ -1,0 +1,158 @@
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Price Prediction</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body background-color:grey>
+    <form action="/result" method="POST">
+     <section class ="main">
+	   <div class ="container py-5">
+      <img class="hero-image-top" src="{{ url_for('static', filename='apple_tv_top.png') }}" width = '1200' height = '200'/>
+	      <div class="row py-5">
+		  <div class="col-lg-10 py-5 mx-auto">
+		     <h2 class="text-white"  style = "align-items: center;">Tv Price</h2>
+             
+                                      <div class="card mt-4" style="height: 300px; width: 1000px; box-shadow: 10px;">
+                                            <div class = "card-body">
+                                                   <div class="row">
+                                                            <div class ="col-lg-3">
+                                                                     <span> Brand</span>
+                                                                           <select class ="mt-2" name="brand" id="brand">
+                                                                                        <option>Select</option>
+                                                                                        <option>Blaupunkt</option>
+                                                                                        <option>CloudWalker</option>
+                                                                                        <option>Haier</option>
+                                                                                        <option>Hisense</option>
+                                                                                        <option>KODAK</option>
+                                                                                        <option>LG</option>
+                                                                                        <option>MOTOROLA</option>
+                                                                                        <option>Mi</option>
+                                                                                        <option>Micromax</option>
+                                                                                        <option>ONIDA</option>
+                                                                                        <option>PHILIPS</option>
+                                                                                        <option>Panasonic</option>
+                                                                                        <option>SAMSUNG</option>
+                                                                                        <option>SONY</option>
+                                                                                        <option>Sansui</option>
+                                                                                        <option>TCL</option>
+                                                                                        <option>Thomson</option>
+                                                                                        <option>Vu</option>
+                                                                                        <option>iFFALCON</option>
+                                                                                   </select>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                     <span> Size</span>
+                                                                           <select class =" mt-2"name="size" id="size">
+                                                                                <option>select</option>
+                                                                                <option value="24">24 inch</option>
+                                                                                <option value="32">32 inch</option>
+                                                                                <option value="40">40 inch</option>
+                                                                                <option value="43">43 inch</option>
+                                                                                <option value="46">46 inch</option>
+                                                                                <option value="49">49 inch</option>
+                                                                                <option value="50">50 inch</option>
+                                                                                <option value="55">55 inch</option>
+                                                                                <option value="65">65 inch</option>
+                                                                      </select>
+ 
+                                                             </div>
+                                                           <div class="col-lg-3">
+                                                                     <span> Screen Quality</span>
+                                                                           <select class =" mt-2"name="hd" id="hd">
+                                                                            <option>Select</option>
+                                                                            <option>HD</option>
+                                                                            <option>Full HD</option>
+                                                                            <option>Ultra HD 4K</option>
+                                                                             </select>
+ 
+                                                             </div>
+                                                            <div class="col-lg-3">
+                                                                     <span> Rating</span>
+                                                                           <select class =" mt-2"name="rating" id="rating">
+                                                                                <option>Select</option>
+                                                                                <option value="1">1 Star</option>
+                                                                                <option value="2">2 Stars</option>
+                                                                                <option value="3">3 Stars</option>
+                                                                                <option value="4">4 Stars</option>
+                                                                                <option value="5">5 Stars</option>
+                                                                            </select>
+ 
+                                                             </div>
+                                                             <br><br>
+                                                           <div class="col-lg-3">
+                                                                     <span> HDMIPorts</span>
+                                                                           <select class =" mt-2"name="hdmi" id="hdmi">
+                                                                             <option>Select</option>
+                                                                              <option value="1">1 Port</option>
+                                                                              <option value="2">2 Ports</option>
+                                                                              <option value="3">3 Ports</option>
+                                                                              <option value="4">4 Ports</option>
+                                                                           </select>
+ 
+                                                             </div>
+                                                           <div class="col-lg-3">
+                                                                     <span> USB</span>
+                                                                           <select class =" mt-2"name="usb" id="usb">
+                                                                                <option>Select</option>
+                                                                                <option value="1">1 Port</option>
+                                                                                <option value="2">2 Ports</option>
+			                                                                          <option value="3">3 Ports</option>
+                                                                      </select>
+ 
+                                                             </div>
+                                                           <div class="col-lg-3">
+                                                                     <span>Speaker Quality</span>
+                                                                           <select class =" mt-2"name="speaker" id="speaker">
+                                                                           <option>Select</option>
+                                                                           <option value="8">8W</option>    
+                                                                           <option value="10">10W</option>
+                                                                           <option value="16">16W</option>
+                                                                           <option value="20">20W</option>
+                                                                           <option value="24">24W</option>
+                                                                           <option value="30">30W</option>
+                                                                           <option value="35">35W</option>
+                                                                           <option value="40">40W</option>
+                                                                           <option value="50">50W</option>
+                                                                           <option value="60">60W</option>
+                                                                   </select>                                                                                                                                    
+                                                                       
+                                                                </select>
+ 
+                                                             </div>                                         
+                                                          <br><br><br><br><br>
+                                                              <div  class="col-lg-4 center" >
+                                                                   <div class="text-center">
+                                                                    <input type="submit" value="Get Price" style="margin-left: 400px;">
+                                                                    </form>
+                                                                    </div>
+                                                             </div>
+                                                   </div>
+                                           </div>
+                                   </div>
+                                         <br> <br>
+                                          <br>
+                       
+                           
+
+
+
+
+                                     
+
+
+                               </div>
+                         </div>
+	   </div>
+	 </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
